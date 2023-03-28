@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5rem;
+}
+.nav{
+    height: 5rem;
+    background: black;
+    color: white;
+    padding-top: 2rem;
+    position: sticky;
+    top: 0;
+    /* z index */
+    z-index: 8;
+}
+.nav-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.nav-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+   
+
+}
+.hero{
+    height: calc(100vh - 5rem);
+   background:rgb(105, 62, 27);
+   position: relative;
+}
+@media screen and (min-width: 768px) {
+    .hero{
+        height: calc(100vh - 5rem);
+        background: linear-gradient(to right, rgba(105,62,27,0.5),rgba(105,62,27,1)), url("/images/pexels-toni-cuenca-585750\ \(1\).jpg") center/cover;
+    }
+}
+.hero-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-center h3{
+font-size: 1.5rem;
+text-transform: capitalize;
+color: white;
+padding-top: 5rem;
+letter-spacing: 0.10rem;
+margin-bottom: 0.75rem;
+}
+.hero-center p{
+    max-width: 30em;
+    margin: 0 auto 1.5rem auto;
+}
+.hero-btn{
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding:10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.container{
+    min-height: 100vh;
+    background: red;
+}
